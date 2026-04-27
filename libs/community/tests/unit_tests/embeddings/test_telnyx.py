@@ -34,7 +34,7 @@ def test_telnyx_api_base_custom() -> None:
 
 def test_telnyx_model_default() -> None:
     embeddings = TelnyxEmbeddings(telnyx_api_key="test")  # type: ignore[arg-type]
-    assert embeddings.model == "BAAI/bge-large-en-v1.5"
+    assert embeddings.model == "thenlper/gte-large"
 
 
 def test_telnyx_model_custom() -> None:

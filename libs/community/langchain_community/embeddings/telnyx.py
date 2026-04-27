@@ -11,7 +11,7 @@ from langchain_community.embeddings.openai import OpenAIEmbeddings
 from langchain_community.utils.openai import is_openai_v1
 
 DEFAULT_API_BASE = "https://api.telnyx.com/v2/ai/openai"
-DEFAULT_MODEL = "BAAI/bge-large-en-v1.5"
+DEFAULT_MODEL = "thenlper/gte-large"
 
 
 class TelnyxEmbeddings(OpenAIEmbeddings):
@@ -27,7 +27,7 @@ class TelnyxEmbeddings(OpenAIEmbeddings):
         .. code-block:: python
 
             from langchain_community.embeddings import TelnyxEmbeddings
-            embeddings = TelnyxEmbeddings(model="BAAI/bge-large-en-v1.5")
+            embeddings = TelnyxEmbeddings(model="thenlper/gte-large")
     """
 
     telnyx_api_key: Optional[SecretStr] = Field(default=None)

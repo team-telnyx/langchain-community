@@ -22,9 +22,6 @@ if TYPE_CHECKING:
     from langchain_community.embeddings.anyscale import (
         AnyscaleEmbeddings,
     )
-    from langchain_community.embeddings.telnyx import (
-        TelnyxEmbeddings,
-    )
     from langchain_community.embeddings.ascend import (
         AscendEmbeddings,
     )
@@ -225,6 +222,9 @@ if TYPE_CHECKING:
     from langchain_community.embeddings.tensorflow_hub import (
         TensorflowHubEmbeddings,
     )
+    from langchain_community.embeddings.telnyx import (
+        TelnyxEmbeddings,
+    )
     from langchain_community.embeddings.textembed import (
         TextEmbedEmbeddings,
     )
@@ -254,7 +254,6 @@ __all__ = [
     "AlephAlphaAsymmetricSemanticEmbedding",
     "AlephAlphaSymmetricSemanticEmbedding",
     "AnyscaleEmbeddings",
-    "TelnyxEmbeddings",
     "AscendEmbeddings",
     "AwaEmbeddings",
     "AzureOpenAIEmbeddings",
@@ -326,6 +325,7 @@ __all__ = [
     "SpacyEmbeddings",
     "SparkLLMTextEmbeddings",
     "TensorflowHubEmbeddings",
+    "TelnyxEmbeddings",
     "TextEmbedEmbeddings",
     "TitanTakeoffEmbed",
     "VertexAIEmbeddings",
@@ -341,7 +341,6 @@ _module_lookup = {
     "AlephAlphaAsymmetricSemanticEmbedding": "langchain_community.embeddings.aleph_alpha",  # noqa: E501
     "AlephAlphaSymmetricSemanticEmbedding": "langchain_community.embeddings.aleph_alpha",  # noqa: E501
     "AnyscaleEmbeddings": "langchain_community.embeddings.anyscale",
-    "TelnyxEmbeddings": "langchain_community.embeddings.telnyx",
     "AwaEmbeddings": "langchain_community.embeddings.awa",
     "AzureOpenAIEmbeddings": "langchain_community.embeddings.azure_openai",
     "BaichuanTextEmbeddings": "langchain_community.embeddings.baichuan",
@@ -411,6 +410,7 @@ _module_lookup = {
     "SpacyEmbeddings": "langchain_community.embeddings.spacy_embeddings",
     "SparkLLMTextEmbeddings": "langchain_community.embeddings.sparkllm",
     "TensorflowHubEmbeddings": "langchain_community.embeddings.tensorflow_hub",
+    "TelnyxEmbeddings": "langchain_community.embeddings.telnyx",
     "VertexAIEmbeddings": "langchain_community.embeddings.vertexai",
     "VolcanoEmbeddings": "langchain_community.embeddings.volcengine",
     "VoyageEmbeddings": "langchain_community.embeddings.voyageai",

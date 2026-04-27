@@ -12,9 +12,6 @@ if TYPE_CHECKING:
     from langchain_community.chat_models.anyscale import (
         ChatAnyscale,
     )
-    from langchain_community.chat_models.telnyx import (
-        ChatTelnyx,
-    )
     from langchain_community.chat_models.baichuan import (
         ChatBaichuan,
     )
@@ -118,6 +115,9 @@ if TYPE_CHECKING:
         ChatSparkLLM,
     )
     from langchain_community.chat_models.symblai_nebula import ChatNebula
+    from langchain_community.chat_models.telnyx import (
+        ChatTelnyx,
+    )
     from langchain_community.chat_models.tongyi import (
         ChatTongyi,
     )
@@ -138,7 +138,6 @@ if TYPE_CHECKING:
     )
 __all__ = [
     "ChatAnyscale",
-    "ChatTelnyx",
     "ChatBaichuan",
     "ChatClovaX",
     "ChatCoze",
@@ -166,6 +165,7 @@ __all__ = [
     "ChatPremAI",
     "ChatSparkLLM",
     "ChatSnowflakeCortex",
+    "ChatTelnyx",
     "ChatTongyi",
     "ChatYandexGPT",
     "ChatYuan2",
@@ -189,7 +189,6 @@ __all__ = [
 
 _module_lookup = {
     "ChatAnyscale": "langchain_community.chat_models.anyscale",
-    "ChatTelnyx": "langchain_community.chat_models.telnyx",
     "ChatBaichuan": "langchain_community.chat_models.baichuan",
     "ChatClovaX": "langchain_community.chat_models.naver",
     "ChatCoze": "langchain_community.chat_models.coze",
@@ -216,6 +215,7 @@ _module_lookup = {
     "ChatReka": "langchain_community.chat_models.reka",
     "ChatSnowflakeCortex": "langchain_community.chat_models.snowflake",
     "ChatSparkLLM": "langchain_community.chat_models.sparkllm",
+    "ChatTelnyx": "langchain_community.chat_models.telnyx",
     "ChatTongyi": "langchain_community.chat_models.tongyi",
     "ChatYandexGPT": "langchain_community.chat_models.yandex",
     "ChatYuan2": "langchain_community.chat_models.yuan2",

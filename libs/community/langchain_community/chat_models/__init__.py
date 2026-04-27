@@ -12,6 +12,9 @@ if TYPE_CHECKING:
     from langchain_community.chat_models.anyscale import (
         ChatAnyscale,
     )
+    from langchain_community.chat_models.telnyx import (
+        ChatTelnyx,
+    )
     from langchain_community.chat_models.baichuan import (
         ChatBaichuan,
     )
@@ -135,6 +138,7 @@ if TYPE_CHECKING:
     )
 __all__ = [
     "ChatAnyscale",
+    "ChatTelnyx",
     "ChatBaichuan",
     "ChatClovaX",
     "ChatCoze",
@@ -185,6 +189,7 @@ __all__ = [
 
 _module_lookup = {
     "ChatAnyscale": "langchain_community.chat_models.anyscale",
+    "ChatTelnyx": "langchain_community.chat_models.telnyx",
     "ChatBaichuan": "langchain_community.chat_models.baichuan",
     "ChatClovaX": "langchain_community.chat_models.naver",
     "ChatCoze": "langchain_community.chat_models.coze",

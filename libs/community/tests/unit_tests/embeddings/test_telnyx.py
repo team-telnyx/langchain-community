@@ -53,7 +53,8 @@ def test_telnyx_tiktoken_disabled() -> None:
 def test_telnyx_initialization_from_env() -> None:
     os.environ["TELNYX_API_KEY"] = "env-api-key"
     embeddings = TelnyxEmbeddings()
-    assert cast(SecretStr, embeddings.telnyx_api_key).get_secret_value() == "env-api-key"
+    key = cast(SecretStr, embeddings.telnyx_api_key).get_secret_value()
+    assert key == "env-api-key"
     del os.environ["TELNYX_API_KEY"]
 
 
